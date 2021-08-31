@@ -1,0 +1,37 @@
+/***
+Bootstrap Line Tabs by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+***/
+
+
+
+
+/* Team Members */
+.team-members {
+    width: 50%;
+    height: 50%;
+
+}
+
+.team-members .team-avatar img {
+    width: 50%;
+    height: 50%;
+}
+
+.team-members .team-desc {
+
+}
+
+.team-members .team-desc h4 {
+
+  
+}
+
+.team-members .team-desc span {
+    color: #FFFFFF
+}
+
+
+
+

@@ -1,0 +1,112 @@
+<html>
+    <head>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+            <link href="/main1.css" rel="stylesheet" id="main-css">
+<!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+<div class="container-fluid" style="margin-top:20px;">
+    <h1 style="text-align:center;color:blue;">Trombinoscope 2018 2019</h1><br>
+    <div class="row">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="showall-tab" data-toggle="pill" href="#showall" role="tab" aria-controls="showall"
+                    aria-selected="true">Show All</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="M2IL-tab" data-toggle="pill" href="#M2IL" role="tab" aria-controls="M2IL"
+                    aria-selected="false">M2 IL</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="M2ILA-tab" data-toggle="pill" href="#M2ILA" role="tab" aria-controls="M2ILA"
+                    aria-selected="false">M2 ILA</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="M2Cyber-tab" data-toggle="pill" href="#M2Cyber" role="tab" aria-controls="M2Cyber"
+                    aria-selected="false">M2 Cyber</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" id="M2RSH-tab" data-toggle="pill" href="#M2RSH" role="tab" aria-controls="M2RSH"
+                        aria-selected="false">M2 RSH</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" id="M2CCN-tab" data-toggle="pill" href="#M2CCN" role="tab" aria-controls="M2CCN"
+                            aria-selected="false">M2 CCN</a>
+                    </li>
+                </ul>
+    </div>
+    <hr noshade style="margin-top:-20px;">
+    <div class="container">
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="showall" role="tabpanel" aria-labelledby="showall-tab">
+                <% for(var i=0; i<files.length; i++) { %>
+                <div class="Portfolio"><a href="#!"><img class="card-img" src="<%=files[i].file %>"
+                        alt=""></a>
+                    <div class="desc">
+                        <%= files[i].name %>
+                    </div>
+                </div>
+                <% } %>
+            </div>
+            <div class="tab-pane fade" id="M2IL" role="tabpanel" aria-labelledby="M2IL-tab">
+                    <% for(var i=0; i<m2il.length; i++) { %>
+                    <div class="Portfolio"><a href="#!"><img class="card-img" src="/public/img/IL/<%=m2il[i].file %>"
+                            alt=""></a>
+                        <div class="desc">
+                            <%= m2il[i].name %>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+            <div class="tab-pane fade" id="M2ILA" role="tabpanel" aria-labelledby="M2ILA-tab">
+                    <% for(var i=0; i<m2ila.length; i++) { %>
+                    <div class="Portfolio"><a href="#!"><img class="card-img" src="/public/img/ILA/<%=m2ila[i].file %>"
+                            alt=""></a>
+                        <div class="desc">
+                            <%= m2ila[i].name %>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+            <div class="tab-pane fade" id="M2Cyber" role="tabpanel" aria-labelledby="M2Cyber-tab">
+                    <% for(var i=0; i<m2cyber.length; i++) { %>
+                    <div class="Portfolio"><a href="#!"><img class="card-img" src="/public/img/Cyber/<%=m2cyber[i].file %>"
+                            alt=""></a>
+                        <div class="desc">
+                            <%= m2cyber[i].name %>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+            <div class="tab-pane fade" id="M2RSH" role="tabpanel" aria-labelledby="M2RSH-tab">
+                    <% for(var i=0; i<m2rsh.length; i++) { %>
+                    <div class="Portfolio"><a href="#!"><img class="card-img" src="/public/img/RSH/<%=m2rsh[i].file %>"
+                            alt=""></a>
+                        <div class="desc">
+                            <%= m2rsh[i].name %>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+            <div class="tab-pane fade" id="M2CCN" role="tabpanel" aria-labelledby="M2CCN-tab">
+                    <% for(var i=0; i<m2ccn.length; i++) { %>
+                    <div class="Portfolio"><a href="#!"><img class="card-img" src="/public/img/CCN/<%=m2ccn[i].file %>"
+                            alt=""></a>
+                        <div class="desc">
+                            <%= m2ccn[i].name %>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

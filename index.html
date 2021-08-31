@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+	<title>Trombi ISTIC</title>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="main.css" type="text/css" media="all">
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+	<script src="capture.js">
+	</script>
+</head>
+<body>
+<div class="contentarea">
+	<h1>
+		Trombi ISTIC
+	</h1>
+	<BR>
+
+	Etape 0: entrer votre nom, prénom et choisisser la spécialité<BR>
+		Etape 1: prendre une photo (Bouton Take photo) <BR>
+			(Elle aparait dans le cadre de droite).<BR>
+		Etape 2: Si ok envoyer la photo vers le serveur	(Bouton Send photo) 
+		<BR>
+			<BR>
+		
+
+	<table>
+		<tr>
+				<td>Nom (sans accent) :</td>
+				<td> <input type="text" id="lastname" ></td>
+		</tr>
+		<tr>
+				<td>Prénom (sans accent):</td>
+				<td>	<input type="text"  id="firstname"></td>
+		</tr>
+		<tr>
+			<td>Parcours :</td>
+			<td>	<select name="spe" size="5" id="spe">
+				<option selected="selected">IL</option>
+				<option>ILA</option>
+				<option>Cyber</option>
+				<option>RSH</option>
+				<option>CCN</option>
+				</select></td>
+	</tr>
+</table>
+
+	
+<BR>
+
+
+	<div class="camera">
+    <video id="video">Video stream not available.</video>
+    <button id="startbutton">Take photo</button> 
+  </div>
+  <canvas id="canvas">
+  </canvas>
+  <div class="output">
+    <img id="photo" alt="The screen capture will appear in this box."> 
+    <button id="sendbutton">Send photo</button> 
+	</div>
+	
+
+</div>
+</body>
+</html>
